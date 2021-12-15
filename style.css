@@ -19,8 +19,7 @@ body{
 }
 
 .btn-privious{
-    background: rgba(255, 255, 255, 0.2);
-    color: #ffffff;
+    background: rgba(245, 0, 0, 0.2);
 }
 .navbar-toggler {
     border: none;
@@ -37,5 +36,15 @@ body{
 .single-result{
     background: rgba(255, 255, 255, 0.2);
     border-radius: 15px;
+}
+p,h4{
+    margin: 0;
+}
+audio{
+    filter:brightness(70%) sepia(10%) saturate(40%) grayscale(10) contrast(80%) invert(100%) opacity(70%);
+    height: 20px;
+}
+#audioPlay{
+    margin-top: 4px;
 }
 
