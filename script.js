@@ -11,6 +11,7 @@ function getMusic(searchKey) {
             lyrics = result.data
             lyrics = lyrics.slice(0, 10)
             closeLyric()
+            document.getElementById("searchResult") .innerHTML=""
             for (let i = 0; i < lyrics.length; i++) {
                 const lyric = lyrics[i];
                 const titleName = lyric.title + " _ " + lyric.album.title
@@ -55,6 +56,6 @@ const displayError = error => {
 }
 function closeLyric() {
     document.getElementById('error-message').innerText = ""
-    document.getElementById('song-lyrics').innerHTML = ""
+    document.getElementById('song-lyrics').innerText = ""
     document.getElementById('song-title').innerText = ""
 }
